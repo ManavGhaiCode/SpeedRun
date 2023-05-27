@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     public float speed = 5f;
+    public Vector2 WeaponPos;
 
     private Vector2 moveInput;
     private Rigidbody2D rb;
@@ -30,5 +31,16 @@ public class PlayerController : MonoBehaviour {
 
         angle = Mathf.Atan2(LookDir.y, LookDir.x) * Mathf.Rad2Deg;
         rb.rotation = angle;
+    }
+
+    public void TakeWeapon(GameObject weapon) {
+        GameObject CurrentWeapon = GameObject.FindGameObjectWithTag("PlayerWeapon");
+
+        if (CurrentWeapon != null) {
+            Destroy(CurrentWeapon);
+        }
+
+        Transform NewWeaponTransform = Instantiate(weapon, WeaponPos, Quaternion.identity).GetComponent<Transform>();
+        NewWeaponTransform.SetParent(transform, false);
     }
 }
