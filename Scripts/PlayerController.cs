@@ -7,6 +7,8 @@ public class PlayerController : MonoBehaviour {
 
     private Vector2 moveInput;
     private Rigidbody2D rb;
+    private Vector2 mousePosistion;
+    private float angle = 0;
 
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
@@ -22,5 +24,11 @@ public class PlayerController : MonoBehaviour {
         float forceY = moveInput.normalized.y * speed * Time.fixedDeltaTime;
 
         rb.MovePosition(rb.position + new Vector2 (forceX, forceY));
+
+        mousePosistion = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 LookDir = mousePosistion - rb.position;
+
+        angle = Mathf.Atan2(LookDir.y, LookDir.x) * Mathf.Rad2Deg - 90f;
+        rb.rotation = angle;
     }
 }
