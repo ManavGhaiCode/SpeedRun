@@ -1,6 +1,7 @@
 using UnityEngine;
 
 public class Weapon : MonoBehaviour {
+    public int bulletDamage = 5;
     public float bulletSpeed = 10f;
     public float bulletLifespan = 1f;
     public float TimeBetweenShots = .2f;
@@ -25,6 +26,7 @@ public class Weapon : MonoBehaviour {
             TimeToShoot = Time.time + _TimeBetweenShots;
 
             GameObject bullet = Instantiate(BulletPrefab, firePoint.position, firePoint.rotation);
+            bullet.GetComponent<Bullet>().Damage = bulletDamage;
             bullet.GetComponent<Bullet>().lifespan = bulletLifespan;
             bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.right * bulletSpeed, ForceMode2D.Impulse);
         }
