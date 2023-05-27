@@ -1,0 +1,32 @@
+using UnityEngine;
+
+public class Weapon : MonoBehaviour {
+    public float bulletSpeed = 10f;
+    public float bulletLifespan = 1f;
+    public float TimeBetweenShots = .2f;
+    public GameObject BulletPrefab;
+    public Transform firePoint;
+
+    private float _TimeBetweenShots = .2f;
+    private float TimeToShoot;
+    private bool isShooting = false;
+
+    private void Start() {
+        _TimeBetweenShots = TimeBetweenShots;
+        TimeToShoot = Time.time + _TimeBetweenShots;
+    }
+
+    private void Update() {
+        isShooting = Input.GetMouseButton(0);
+    }
+
+    private void FixedUpdate() {
+        if (isShooting && Time.time >= TimeToShoot) {
+            TimeToShoot = Time.time + _TimeBetweenShots;
+
+            GameObject bullet = Instantiate(BulletPrefab, firePoint.position, firePoint.rotation);
+            bullet.GetComponent<Bullet>().lifespan = bulletLifespan;
+            bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.right * bulletSpeed, ForceMode2D.Impulse);
+        }
+    }
+}
