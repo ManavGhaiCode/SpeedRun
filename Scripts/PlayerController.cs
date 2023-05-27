@@ -28,7 +28,7 @@ public class PlayerController : MonoBehaviour {
         mousePosistion = Camera.main.ScreenToWorldPoint(Input.mousePosition);
         Vector2 LookDir = mousePosistion - rb.position;
 
-        angle = Mathf.Atan2(LookDir.y, LookDir.x) * Mathf.Rad2Deg - 90f;
+        angle = Mathf.Atan2(LookDir.y, LookDir.x) * Mathf.Rad2Deg;
         rb.rotation = angle;
     }
 }
