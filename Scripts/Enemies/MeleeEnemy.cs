@@ -42,6 +42,8 @@ public class MeleeEnemy : Enemy {
 
                 transform.position = Vector2.Lerp(originalPosition, Player.position, interpolation);
                 yield return null;
+            } else {
+                yield return null;
             }
         }
     }

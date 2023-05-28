@@ -103,6 +103,7 @@ MonoBehaviour:
   health: 40
   Player: {fileID: 0}
   rb: {fileID: 0}
+  DeathParticalEffect: {fileID: 6987035269385939405, guid: 21fbf6fdb1a7686f8a2329a49807757f, type: 3}
   stopDistance: 1.5
   attackSpeed: 10
   TimeBetweenAttacks: 3
@@ -147,9 +148,9 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4

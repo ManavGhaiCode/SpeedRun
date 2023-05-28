@@ -7,6 +7,8 @@ public class Enemy : MonoBehaviour {
     [HideInInspector] public Transform Player;
     [HideInInspector] public Rigidbody2D rb;
 
+    public GameObject DeathParticalEffect;
+
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
         Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
@@ -16,7 +18,12 @@ public class Enemy : MonoBehaviour {
         health -= Damage;
 
         if (health <= 0) {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    public void Die() {
+        Instantiate(DeathParticalEffect, transform.position, transform.rotation);
+        Destroy(gameObject);
     }
 }
