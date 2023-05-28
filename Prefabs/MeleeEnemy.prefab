@@ -105,7 +105,7 @@ MonoBehaviour:
   rb: {fileID: 0}
   DeathParticalEffect: {fileID: 6987035269385939405, guid: 21fbf6fdb1a7686f8a2329a49807757f, type: 3}
   stopDistance: 1.5
-  attackSpeed: 10
+  attackSpeed: 5
   TimeBetweenAttacks: 3
 --- !u!61 &7244519917114603088
 BoxCollider2D:
