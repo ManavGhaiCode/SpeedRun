@@ -29,22 +29,20 @@ public class MeleeEnemy : Enemy {
     }
 
     IEnumerator Attack() {
-        if (Player != null) {
-            Player.GetComponent<PlayerController>().TakeDamage(1);
+        Player.GetComponent<PlayerController>().TakeDamage(1);
 
-            Vector2 originalPosition = transform.position;
+        Vector2 originalPosition = transform.position;
 
-            float percent = 0f;
+        float percent = 0f;
 
-            while (percent <= 1) {
+        while (percent <= 1) {
+            if (Player != null) {
                 percent += Time.deltaTime * attackSpeed;
                 float interpolation = (-Mathf.Pow(percent, 2) + percent) * 4;
 
                 transform.position = Vector2.Lerp(originalPosition, Player.position, interpolation);
                 yield return null;
             }
-        } else {
-            yield return null;
         }
     }
 }
