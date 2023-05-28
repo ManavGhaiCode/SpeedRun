@@ -5,6 +5,7 @@ public class Bullet : MonoBehaviour {
     public float lifespan;
 
     public GameObject EnemyHitEffect;
+    public GameObject HitParticalEffect;
 
     private void Start() {
         Destroy(gameObject, lifespan);
@@ -20,6 +21,8 @@ public class Bullet : MonoBehaviour {
             enemy.TakeDamage(Damage);
         }
 
+        GameObject hit_particleEffect = Instantiate(HitParticalEffect, transform.position, transform.rotation);
+        hit_particleEffect.transform.localScale = new Vector3 (.3f, .3f, .3f);
         Destroy(gameObject, .05f);
     }
 }
