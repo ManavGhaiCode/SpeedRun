@@ -697,7 +697,9 @@ MonoBehaviour:
   health: 40
   Player: {fileID: 0}
   rb: {fileID: 0}
-  stopDistance: 3
+  stopDistance: 1.5
+  attackSpeed: 4
+  TimeBetweenAttacks: 5
 --- !u!1 &720068715
 GameObject:
   m_ObjectHideFlags: 0
