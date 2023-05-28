@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
-  health: 40
+  health: 30
   Player: {fileID: 0}
   rb: {fileID: 0}
   DeathParticalEffect: {fileID: 6987035269385939405, guid: 21fbf6fdb1a7686f8a2329a49807757f, type: 3}
