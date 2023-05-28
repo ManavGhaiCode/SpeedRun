@@ -11,6 +11,8 @@ public class PlayerController : MonoBehaviour {
     private Vector2 mousePosistion;
     private float angle = 0;
 
+    private int health = 10;
+
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
     }
@@ -42,5 +44,13 @@ public class PlayerController : MonoBehaviour {
 
         Transform NewWeaponTransform = Instantiate(weapon, WeaponPos, Quaternion.identity).GetComponent<Transform>();
         NewWeaponTransform.SetParent(transform, false);
+    }
+
+    public void TakeDamage(int Damage) {
+        health -= Damage;
+
+        if (health <= 0) {
+            Destroy(gameObject);
+        }
     }
 }
