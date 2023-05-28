@@ -3,7 +3,7 @@ using UnityEngine;
 public class Enemy : MonoBehaviour {
     public float speed = 5f;
 
-    [HideInInspector] public int health = 40;
+    public int health = 40;
     [HideInInspector] public Transform Player;
     [HideInInspector] public Rigidbody2D rb;
 

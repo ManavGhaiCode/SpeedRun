@@ -129,8 +129,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 274af9ec64497464392950fb3edeeae8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bulletDamage: 5
   bulletSpeed: 10
   bulletLifespan: 0.5
-  TimeBetweenShots: 0.2
+  TimeBetweenShots: 0.3
   BulletPrefab: {fileID: 2712143921589178577, guid: 362c76613800070f986133333661a9e8, type: 3}
   firePoint: {fileID: 1076824015702458708}
