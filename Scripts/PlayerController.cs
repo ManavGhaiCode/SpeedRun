@@ -12,8 +12,10 @@ public class PlayerController : MonoBehaviour {
     private float angle = 0;
 
     private int health = 10;
+    [SerializeField] private HealthBar healthBar;
 
     private void Start() {
+        healthBar.SetHealth(health);
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -48,6 +50,7 @@ public class PlayerController : MonoBehaviour {
 
     public void TakeDamage(int Damage) {
         health -= Damage;
+        healthBar.SetHealth(health);
 
         if (health <= 0) {
             Destroy(gameObject);
