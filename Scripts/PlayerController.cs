@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
     [SerializeField] private HealthBar healthBar;
 
     private void Start() {
-        healthBar.SetHealth(health);
+        healthBar.SetMaxHealth(health);
         rb = GetComponent<Rigidbody2D>();
     }
 
