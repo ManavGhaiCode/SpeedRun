@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class Enemy : MonoBehaviour {
@@ -8,9 +9,12 @@ public class Enemy : MonoBehaviour {
     [HideInInspector] public Rigidbody2D rb;
 
     public GameObject DeathParticalEffect;
+    public Animator anim;
 
     private void Start() {
         rb = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
+
         Player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
 
@@ -20,6 +24,8 @@ public class Enemy : MonoBehaviour {
         if (health <= 0) {
             Die();
         }
+
+        anim.SetTrigger("Hit");
     }
 
     public void Die() {

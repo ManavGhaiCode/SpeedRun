@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5762190209187499948}
   - component: {fileID: 7244519917114603088}
   - component: {fileID: 4004777096804093308}
+  - component: {fileID: 613460488800985691}
   m_Layer: 0
   m_Name: MeleeEnemy
   m_TagString: Untagged
@@ -104,6 +105,7 @@ MonoBehaviour:
   Player: {fileID: 0}
   rb: {fileID: 0}
   DeathParticalEffect: {fileID: 6987035269385939405, guid: 21fbf6fdb1a7686f8a2329a49807757f, type: 3}
+  anim: {fileID: 0}
   stopDistance: 1.5
   attackSpeed: 5
   TimeBetweenAttacks: 3
@@ -154,3 +156,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!95 &613460488800985691
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5954794572443685513}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9767c306ddfc598048731440aaa4e980, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
