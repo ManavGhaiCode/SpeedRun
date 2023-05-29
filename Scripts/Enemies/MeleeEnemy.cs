@@ -27,6 +27,8 @@ public class MeleeEnemy : Enemy {
                 }
             }
         }
+
+        rb.angularVelocity = 0;
     }
 
     IEnumerator Attack() {
