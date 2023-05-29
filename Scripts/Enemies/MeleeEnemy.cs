@@ -9,7 +9,8 @@ public class MeleeEnemy : Enemy {
     private float TimeToAttack;
     [SerializeField] private float TimeBetweenAttacks = 1f;
 
-    private void Awake() {
+    public override void Start() {
+        base.Start();
         TimeToAttack = Time.time + TimeBetweenAttacks;
     }
 

@@ -11,7 +11,7 @@ public class Enemy : MonoBehaviour {
     public GameObject DeathParticalEffect;
     public Animator anim;
 
-    private void Start() {
+    public virtual void Start() {
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
 
