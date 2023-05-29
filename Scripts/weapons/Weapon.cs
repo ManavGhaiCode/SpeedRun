@@ -12,9 +12,13 @@ public class Weapon : MonoBehaviour {
     private float TimeToShoot;
     private bool isShooting = false;
 
+    private GameObject Player;
+
     private void Start() {
         _TimeBetweenShots = TimeBetweenShots;
         TimeToShoot = Time.time + _TimeBetweenShots;
+
+        Player = GameObject.FindGameObjectWithTag("Player");
     }
 
     private void Update() {
@@ -23,12 +27,16 @@ public class Weapon : MonoBehaviour {
 
     private void FixedUpdate() {
         if (isShooting && Time.time >= TimeToShoot) {
+            Player.GetComponent<Animator>().SetBool("isShooting", true);
+
             TimeToShoot = Time.time + _TimeBetweenShots;
 
             GameObject bullet = Instantiate(BulletPrefab, firePoint.position, firePoint.rotation);
             bullet.GetComponent<Bullet>().Damage = bulletDamage;
             bullet.GetComponent<Bullet>().lifespan = bulletLifespan;
             bullet.GetComponent<Rigidbody2D>().AddForce(firePoint.right * bulletSpeed, ForceMode2D.Impulse);
+        } else {
+            Player.GetComponent<Animator>().SetBool("isShooting", false);
         }
     }
 }
