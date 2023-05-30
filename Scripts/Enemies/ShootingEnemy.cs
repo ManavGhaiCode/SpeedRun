@@ -33,6 +33,7 @@ public class ShootingEnemy : Enemy {
 
             if (Vector2.Distance(Player.position, transform.position) < ShootDistance && Time.time > TimeToShoot) {
                 TimeToShoot = Time.time + TimeBetweenShoots;
+                anim.SetTrigger("Fire");
 
                 weapon.Shoot();
             }
