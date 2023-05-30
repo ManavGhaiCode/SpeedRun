@@ -39,6 +39,8 @@ public class ShootingEnemy : Enemy {
 
             if (Vector2.Distance(Player.position, transform.position) > stopDistance) {
                 rb.MovePosition(Vector2.MoveTowards(transform.position, Player.position, speed * Time.deltaTime));
+            } else {
+                rb.velocity = Vector2.zero;
             }
         }
     } 
