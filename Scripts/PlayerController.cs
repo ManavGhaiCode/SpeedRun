@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour {
     private Vector2 mousePosistion;
     private float angle = 0;
 
-    private int health = 10;
+    [SerializeField] private int health = 10;
     [SerializeField] private HealthBar healthBar;
 
     private void Start() {
