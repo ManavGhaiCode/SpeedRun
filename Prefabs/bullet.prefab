@@ -104,6 +104,8 @@ MonoBehaviour:
   lifespan: 0.3
   EnemyHitEffect: {fileID: 6987035269385939405, guid: 21fbf6fdb1a7686f8a2329a49807757f, type: 3}
   HitParticalEffect: {fileID: 7174601270258790570, guid: 7780bc5f70e539c0ab601163abd8fc6b, type: 3}
+  Type: 0
+  SplashDamageObj: {fileID: 0}
 --- !u!50 &6610841304356327304
 Rigidbody2D:
   serializedVersion: 4
@@ -156,4 +158,4 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.3
+  m_Radius: 0.4

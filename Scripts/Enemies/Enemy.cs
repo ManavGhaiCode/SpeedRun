@@ -29,6 +29,8 @@ public class Enemy : MonoBehaviour {
     }
 
     public void Die() {
+        GameObject.FindGameObjectWithTag("main").GetComponent<LevelData>().EnemyDeath();
+
         Instantiate(DeathParticalEffect, transform.position, transform.rotation);
         Destroy(gameObject);
     }
