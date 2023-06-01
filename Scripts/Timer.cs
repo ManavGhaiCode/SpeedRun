@@ -1,3 +1,5 @@
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
 public class Timer : MonoBehaviour {
@@ -15,7 +17,13 @@ public class Timer : MonoBehaviour {
         txt.SetText(Mathf.Ceil(timeToStop - Time.time).ToString());
 
         if (Time.time >= timeToStop) {
+            StartCoroutine(SendToEnd());
             Destroy(GameObject.FindGameObjectWithTag("Player"));
         }
+    }
+
+    private IEnumerator SendToEnd() {
+        yield return new WaitForSeconds(.5f);
+        GameObject.FindGameObjectWithTag("main").GetComponent<SceneLoader>().LoadScene("DeathEnd");
     }
 }

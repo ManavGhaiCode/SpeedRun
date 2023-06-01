@@ -48,11 +48,17 @@ public class PlayerController : MonoBehaviour {
         NewWeaponTransform.SetParent(transform, false);
     }
 
+    private IEnumerator SendToEnd() {
+        yield return new WaitForSeconds(.5f);
+        GameObject.FindGameObjectWithTag("main").GetComponent<SceneLoader>().LoadScene("DeathEnd");
+    }
+
     public void TakeDamage(int Damage) {
         health -= Damage;
         healthBar.SetHealth(health);
 
         if (health <= 0) {
+            StartCoroutine(SendToEnd());
             Destroy(gameObject);
         }
     }
