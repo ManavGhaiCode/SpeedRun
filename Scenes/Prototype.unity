@@ -435,7 +435,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   t: 100
-  txt: {fileID: 0}
+  txt: {fileID: 1276222842}
 --- !u!4 &253455431
 Transform:
   m_ObjectHideFlags: 0
@@ -787,7 +787,7 @@ Camera:
   far clip plane: 1000
   field of view: 0.00001
   orthographic: 1
-  orthographic size: 4.9795637
+  orthographic size: 4.9750457
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -1604,6 +1604,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5f2af9cd9c1d3ac3b9682d9eea894a90, type: 3}
+--- !u!114 &1276222842 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 4658740660458343898, guid: 5b5566187f969d45583c8d3ad4f381e1, type: 3}
+  m_PrefabInstance: {fileID: 7402570285063617621}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2ae64a29506b0f591b1ad6ff8eda36cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1292993897
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2244,6 +2255,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2295451054747727147, guid: a9ad4820bce0141d7afac9b3b2b3b263, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1916898909}
     - target: {fileID: 2295451054747727149, guid: a9ad4820bce0141d7afac9b3b2b3b263, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -2290,6 +2305,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a9ad4820bce0141d7afac9b3b2b3b263, type: 3}
+--- !u!114 &1916898909 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5848750554920581470, guid: 5b5566187f969d45583c8d3ad4f381e1, type: 3}
+  m_PrefabInstance: {fileID: 7402570285063617621}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b35c58d6f50eca8fd9614a25c6a31848, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1922301366
 GameObject:
   m_ObjectHideFlags: 0
