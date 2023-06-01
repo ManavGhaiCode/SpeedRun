@@ -464,7 +464,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b98b2d219763c25a18c0e8fe8fd45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextLevel: Start
+  NextLevel: GameEnd
 --- !u!1001 &253483370
 PrefabInstance:
   m_ObjectHideFlags: 0
