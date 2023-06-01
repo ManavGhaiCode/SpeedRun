@@ -287,6 +287,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a0b98b2d219763c25a18c0e8fe8fd45d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  NextLevel: 
 --- !u!4 &361425091
 Transform:
   m_ObjectHideFlags: 0
@@ -401,7 +402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sharedProfile: {fileID: 11400000, guid: 1b40dff99da0397c8b510723178f3001, type: 2}
-  isGlobal: 0
+  isGlobal: 1
   blendDistance: 0
   weight: 1
   priority: 0
@@ -420,7 +421,7 @@ MonoBehaviour:
   volumeTrigger: {fileID: 842860271}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 8
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
   antialiasingMode: 0
