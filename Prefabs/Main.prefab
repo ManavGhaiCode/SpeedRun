@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4607119904374987890}
   - component: {fileID: 4607119904374987901}
   - component: {fileID: 4607119904374987900}
+  - component: {fileID: -7463003407694878621}
   m_Layer: 0
   m_Name: Main
   m_TagString: main
@@ -75,3 +76,25 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   number_Enemies: 6
   WallToDestroy: {fileID: 0}
+--- !u!114 &-7463003407694878621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4607119904374987903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eec32b921a38403b904f197c9b776ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sounds:
+  - name: bullet
+    clip: {fileID: 8300000, guid: 04575a5dcde668474867d32975648bdb, type: 3}
+    volume: 0.85
+    volumeVariance: 0.15
+    pitch: 1
+    pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
