@@ -17,6 +17,7 @@ public class Bullet : MonoBehaviour {
     public GameObject SplashDamageObj;
 
     private void Start() {
+        GameObject.FindGameObjectWithTag("main").GetComponent<AudioManager>().Play("bullet");
         Invoke("DestroyBullet", lifespan);
     }
 

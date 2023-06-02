@@ -91,10 +91,19 @@ MonoBehaviour:
   sounds:
   - name: bullet
     clip: {fileID: 8300000, guid: 04575a5dcde668474867d32975648bdb, type: 3}
-    volume: 0.85
-    volumeVariance: 0.15
+    volume: 0.3
+    volumeVariance: 0.1
     pitch: 1
     pitchVariance: 0.2
+    loop: 0
+    mixerGroup: {fileID: 0}
+    source: {fileID: 0}
+  - name: enemyDath
+    clip: {fileID: 8300000, guid: b308226fb0fce1bfcb4171e3d917fc85, type: 3}
+    volume: 1
+    volumeVariance: 0.3
+    pitch: 1
+    pitchVariance: 0.25
     loop: 0
     mixerGroup: {fileID: 0}
     source: {fileID: 0}

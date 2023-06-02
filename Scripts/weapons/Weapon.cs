@@ -27,6 +27,7 @@ public class Weapon : MonoBehaviour {
 
     private void FixedUpdate() {
         if (isShooting && Time.time >= TimeToShoot) {
+            GameObject.FindGameObjectWithTag("main").GetComponent<AudioManager>().Play("bullet");
             Player.GetComponent<Animator>().SetBool("isShooting", true);
 
             TimeToShoot = Time.time + _TimeBetweenShots;
