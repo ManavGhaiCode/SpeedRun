@@ -931,7 +931,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4607119904374987901, guid: 08bd64bbf8ae319eca0001f65be67711, type: 3}
       propertyPath: NextLevel
-      value: Level5
+      value: Level7
       objectReference: {fileID: 0}
     - target: {fileID: 4607119904374987903, guid: 08bd64bbf8ae319eca0001f65be67711, type: 3}
       propertyPath: m_Name
@@ -1000,7 +1000,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3886869903642932430, guid: e5ca431c8cb6cbc99bb1a954114589f3, type: 3}
       propertyPath: orthographic size
-      value: 5.396051
+      value: 5.0088553
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ca431c8cb6cbc99bb1a954114589f3, type: 3}
