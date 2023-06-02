@@ -1120,6 +1120,10 @@ PrefabInstance:
       propertyPath: WallToDestroy
       value: 
       objectReference: {fileID: 1784774512}
+    - target: {fileID: 4607119904374987900, guid: 08bd64bbf8ae319eca0001f65be67711, type: 3}
+      propertyPath: number_Enemies
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 4607119904374987901, guid: 08bd64bbf8ae319eca0001f65be67711, type: 3}
       propertyPath: NextLevel
       value: Level5
