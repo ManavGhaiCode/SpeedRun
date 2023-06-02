@@ -625,7 +625,7 @@ Transform:
   - {fileID: 1394607369}
   - {fileID: 1784774515}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &561453964 stripped
 MonoBehaviour:
@@ -1053,7 +1053,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3886869903642932430, guid: e5ca431c8cb6cbc99bb1a954114589f3, type: 3}
       propertyPath: orthographic size
-      value: 4.966772
+      value: 4.908454
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e5ca431c8cb6cbc99bb1a954114589f3, type: 3}
@@ -1074,7 +1074,7 @@ PrefabInstance:
       objectReference: {fileID: 561453964}
     - target: {fileID: 4607119904374987891, guid: 08bd64bbf8ae319eca0001f65be67711, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4607119904374987891, guid: 08bd64bbf8ae319eca0001f65be67711, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1122,7 +1122,7 @@ PrefabInstance:
       objectReference: {fileID: 1784774512}
     - target: {fileID: 4607119904374987900, guid: 08bd64bbf8ae319eca0001f65be67711, type: 3}
       propertyPath: number_Enemies
-      value: 16
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 4607119904374987901, guid: 08bd64bbf8ae319eca0001f65be67711, type: 3}
       propertyPath: NextLevel
