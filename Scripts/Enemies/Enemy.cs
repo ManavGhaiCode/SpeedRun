@@ -29,7 +29,10 @@ public class Enemy : MonoBehaviour {
     }
 
     public void Die() {
-        GameObject.FindGameObjectWithTag("main").GetComponent<LevelData>().EnemyDeath();
+        GameObject main = GameObject.FindGameObjectWithTag("main");
+
+        main.GetComponent<LevelData>().EnemyDeath();
+        main.GetComponent<AudioManager>().Play("enemyDeath");
 
         Instantiate(DeathParticalEffect, transform.position, transform.rotation);
         Destroy(gameObject);
