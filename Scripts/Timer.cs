@@ -13,7 +13,6 @@ public class Timer : MonoBehaviour {
     }
 
     private void Update() {
-        Debug.Log(timeToStop - Time.time);
         txt.SetText(Mathf.Ceil(timeToStop - Time.time).ToString());
 
         if (Time.time >= timeToStop) {
