@@ -32,6 +32,8 @@ public class ShootingEnemy : Enemy {
             rb.rotation = angle;
 
             if (Vector2.Distance(Player.position, transform.position) < ShootDistance && Time.time > TimeToShoot) {
+                GameObject.FindGameObjectWithTag("main").GetComponent<AudioManager>().Play("bullet");
+
                 TimeToShoot = Time.time + TimeBetweenShoots;
                 anim.SetTrigger("Fire");
 
