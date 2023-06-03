@@ -12,6 +12,8 @@ public class EnemyBullet : MonoBehaviour {
     }
 
     private void OnTriggerEnter2D(Collider2D hitInfo) {
+        GameObject.FindGameObjectWithTag("main").GetComponent<AudioManager>().Play("bullet");
+
         PlayerController Player = hitInfo.GetComponent<PlayerController>();
 
         if (Player != null) {
